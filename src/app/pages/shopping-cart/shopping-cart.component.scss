@@ -1,0 +1,38 @@
+.shopping-cart {
+    @media only screen and (min-width: 991px) {
+        .product {
+            overflow-y: scroll;
+            width: 66.66666667%;
+            position: absolute;
+            height: 85%;
+        }
+        .cart {
+            width: 31.88888888%;
+            position: absolute;
+            height: 85%;
+            border: 1px solid rgba(0,0,0,.125);
+            border-top: unset;
+            border-bottom: unset;
+        }
+        @media only screen and (max-width: 1600px) and (min-width: 1400px) {
+            .cart { 
+                width: 31.7%;
+            }
+        }
+        @media only screen and (max-width: 1400px) and (min-width: 1250px){
+            .cart { 
+                width: 31.5%;
+            }
+        }
+        @media only screen and (max-width: 1250px) and (min-width: 1000px){
+            .cart { 
+                width: 31.3%;
+            }
+        }
+        @media only screen and (max-width: 1100px) and  (min-width: 991px){
+            .cart { 
+                width: 31.0%;
+            }
+        }
+    }
+}

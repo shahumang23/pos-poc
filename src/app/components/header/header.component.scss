@@ -1,0 +1,25 @@
+@import "../../styles/_vars.scss";
+
+.app-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: $primary-blue;
+  color: $white;
+  font-weight: 600;
+
+  .spacer {
+    flex: 1;
+  }
+
+  .right-btn {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    height: 40px;
+    color: $white;
+  }
+}

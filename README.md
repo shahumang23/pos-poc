@@ -1,27 +1,61 @@
-# PosPoc
+# 'POS Assignment':- Presentation Of Point of Sale .
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
+## Getting Started
 
-## Development server
+To get you started you can simply unzip the `POS-POC` folder and install the dependencies:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Install Dependencies
 
-## Code scaffolding
+We have two kinds of dependencies in this project: tools and Angular framework code. The tools help
+us manage and test the application.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* We get the tools we depend upon via `npm`, the Node package manager.
 
-## Build
+```
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+After that, you should find out that you have
+below new folders in your project.
 
-## Running unit tests
+* `node_modules` - contains the npm packages for the tools we need
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Run the Application
 
-## Running end-to-end tests
+We have pre configured the project with a simple development web server. The simplest way to start
+this server is:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+ng serve
+```
 
-## Further help
+Now browse to the app at [`http://localhost:4200/`].
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Running Unit Tests
+
+The POS POC app comes some pre configured with unit tests. These are written in Jasmine, which we run with the Karma test runner.
+
+```
+ng test
+```
+
+## Useful links
+[angular](https://angular.io/)
+
+[httpclient](https://angular.io/guide/http)
+
+[jasmine](https://jasmine.github.io/)
+
+[karma](https://karma-runner.github.io/)
+
+[node](https://nodejs.org/)
+
+[npm](https://www.npmjs.org/)
+
+[typescript](https://www.typescriptlang.org/)
+
+[webpack](https://webpack.js.org/)
+
+[bootstrap](https://getbootstrap.com/)
+
+[RxJS](https://angular.io/guide/rx-library)

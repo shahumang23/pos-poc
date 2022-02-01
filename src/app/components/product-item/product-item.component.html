@@ -1,0 +1,22 @@
+<div class="card mb-3 shadow-sm">
+    <img class="p-2 img-fluid" [src]="productItem.imageUrl" />
+
+    <div class="card-body">
+        <p class="card-text">
+            <strong>{{productItem.name}}</strong>
+        </p>
+        <p class="card-text">
+            <strong>Price: {{ productItem.price | currency: "USD" }}</strong>
+        </p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div *ngIf="!productItem.isAddedIntoCart">
+                <button type="button" class="btn btn-sm btn-primary product-btn" (click)="handleAddToCart()">
+                    Add to Cart
+                </button>
+            </div>
+            <div *ngIf="productItem.isAddedIntoCart">
+                Item Added to your cart
+            </div>
+        </div>
+    </div>
+</div>

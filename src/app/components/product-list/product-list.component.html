@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div *ngIf="!isError" class="row">
+        <div *ngFor="let product of productList">
+            <app-category-header [categoryTitle]="product.category"></app-category-header>
+            <div class="row">
+                <div class="col-6 col-md-4 col-xl-3" *ngFor="let category of product.categoryList">
+                    <app-product-item [productItem]="category"></app-product-item>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="isError" class="error-alert alert alert-danger mt-2" role="alert">
+    Sorry something went wrong!
+</div>

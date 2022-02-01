@@ -1,0 +1,23 @@
+<div class="cartItem">
+    <div *ngIf="cartItems.length === 0" class="alert alert-info">Your Cart is Empty. Please selected your favourite
+        food </div>
+
+    <div *ngIf="cartItems.length > 0">
+        <div>
+            <div class="list-group-item" *ngFor="let item of cartItems">
+                <app-cart-item [cartItem]="item"></app-cart-item>
+            </div>
+        </div>
+        <div class="fixed-bottom mb-3 mx-2">
+            <div class="flow-root mb-2">
+                <span class="float-start">Total</span>
+                <span class="float-end">{{ cartTotal | currency:'USD' }}</span>
+            </div>
+            <div class="d-grid">
+                <button type="button" class="btn btn-success btn-lg" (click)="payCartAmount()">
+                    Pay
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

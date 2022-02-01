@@ -1,0 +1,13 @@
+<app-header [imageUrl]="imageURL" (addToCartBtnEvent)="addToCartBtnClickEvent()"></app-header>
+<div class="shopping-cart container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-12 col-lg-8 d-lg-block" [ngClass]="{'d-none': isDisplayCartScreen}">
+            <app-inner-header [headerTitle]="productsTitle"></app-inner-header>
+            <app-product-list class="product"></app-product-list>
+        </div>
+        <div class="col-md-12 col-lg-4 d-lg-block" [ngClass]="{'d-none': !isDisplayCartScreen}">
+            <app-inner-header [headerTitle]="orderTitle"></app-inner-header>
+            <app-cart class="cart"></app-cart>
+        </div>
+    </div>
+</div>

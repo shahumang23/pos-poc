@@ -1,0 +1,40 @@
+.cartItem {
+  height: 81.5%;
+  overflow-y: scroll;
+  .list-group-item {
+    padding: 0.5rem 0;
+    border-left: unset;
+    border-right: unset;
+  }
+  .fixed-bottom {
+    left: unset;
+    right: unset;
+    width: 96%;
+    margin-top: 10%;
+    .flow-root {
+      display: flow-root;
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    .fixed-bottom {
+      width: 30.7%;
+    }
+  }
+
+  @media only screen and (max-width: 1600px) and (min-width: 1400px) {
+    .fixed-bottom {
+      width: 30.5%;
+    }
+  }
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    .fixed-bottom {
+      width: 30%;
+    }
+  }
+  @media only screen and (max-width: 1200px) and (min-width: 991px) {
+    .fixed-bottom {
+      width: 29.6%;
+    }
+  }
+}
